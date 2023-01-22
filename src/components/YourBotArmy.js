@@ -44,7 +44,18 @@ function BotCard({bot, addRemoveBot, inArmy, deleteBot}) {
             <i className="icon shield"/>
                         {bot.armor}
           </span>
-                    
+                    <span>
+            <div className="ui center aligned segment basic">
+              <button
+                  className="ui mini red button"
+                  onClick={() => {
+                      deleteBot(bot)
+                  }}
+              >
+                x
+              </button>
+            </div>
+          </span>
                 </div>
             </div>
         </div>
